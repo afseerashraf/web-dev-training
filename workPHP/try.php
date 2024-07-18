@@ -39,6 +39,13 @@ $fruits = ['apple', 'banana', 'orange'];
         background-color: orange;
         color:black;
        }
+       .novalue{
+        margin: auto;
+        height:100px;
+        width:100px;
+        background-color: orange;
+        color:black;
+       }
        .date{
         font-size: 2em;
         animation: fadeIn 1s ease-in-out infinite alternate;
@@ -52,7 +59,7 @@ $fruits = ['apple', 'banana', 'orange'];
 
  </header>
 
- <marquee behavior="slow" direction="right"></marquee><p class="date">Itams add date <?php echo date('Y-M-D H:i:s') ?></p> </marquee>
+ <p class="date">Itams add date <?php echo date('Y-M-D H:i:s') ?></p> 
 
 <div class="apple">
 <h3><?php echo findValue($fruits, 'apple') ?> </h3>
@@ -63,6 +70,11 @@ $fruits = ['apple', 'banana', 'orange'];
 </div>
 <div class="orange">
 <h3><?php echo findValue($fruits, 'orange') ?> </h3>
+</div>
+
+<div class="novalue">
+<h3><?php echo findValue($fruits, 'kiwi') ?> </h3>
+
 </div>
 
 

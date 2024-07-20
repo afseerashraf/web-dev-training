@@ -30,7 +30,7 @@
 <body>
   <h1>User Information</h1>
   <div class="continer">
-    <form action='newUser.php' method="POST">
+    <form action='newUser.php' method="post">
       <label for="username">Name</label> <br>
       <input type="text" name="name" placeholder="name"><br>
       <label for="email">email</label><br>

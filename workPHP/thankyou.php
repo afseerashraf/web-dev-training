@@ -21,7 +21,7 @@
     </style>
 </head>
 <body>
-    <h1>Thank's <?php echo strtoupper($_SESSION['name']);?></h1>
+    <h1>Thank's <?php echo strtoupper( $_SESSION['name'] );?></h1>
     <button><a href="index.php">Contact</a></button>
 </body>
 </html>

@@ -1,4 +1,4 @@
-<?php
+ <?php
 include "connection.php";
 $id = $_GET['id'];
 $select = "SELECT * FROM users WHERE ID = $id";
@@ -66,4 +66,4 @@ $result = mysqli_fetch_assoc($value);
     </div>
 </body>
 
-</html>
+</html> 

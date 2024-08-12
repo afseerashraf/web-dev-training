@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border: 1px solid;
+            margin-top: 120px;
+            margin-left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="studentName"> </h1>
+    <table border="1">
+        <tbody>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Mobile</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td id="name1">Afseer</td>
+                <td>afseer@gmail.com</td>
+                <td>7356233174</td>
+                <td><button id="view">View</button></td>
+            </tr>
+            <tr>
+                <td id="name2">meghnath</td>
+                <td>megha@gmail.com</td>
+                <td>7314233174</td>
+                <td><button id="view">View</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <h3 id="displayName"></h3>
+    
+   
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</body>
+<script>
+    $(document).ready(function(){
+      $('#view').click(function(){
+        var name = $(this).closest('tr').find('td[id]').text();
+        $('#studentName').text('hellow ' + name);
+      });
+    });
+    
+</script>
+
+</html>
